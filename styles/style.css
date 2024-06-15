@@ -1,1 +1,292 @@
-/* место для вашего кода */
+/* Оно тебе надо by RM */
+
+/* Общие повторяющиеся стили */
+/* 
+.overlay {
+
+} */
+
+/* Шапуля */
+
+.header {
+  padding: 92px 24px;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  grid-column: 3;
+  gap: 32px;
+  width: 392px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+  list-style: circle;
+}
+
+.menu-list-item-active {
+  list-style: none;
+}
+
+.menu-list-item-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.13px;
+  text-transform: lowercase;
+}
+
+.menu-list-item-link-active {
+  text-decoration: none;
+}
+
+.logo-link {
+  grid-column: 7;
+}
+
+.logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address-container {
+  display: block;
+  grid-column: 22;
+  width: 240px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-underline-offset: 4px;
+  white-space: nowrap;
+}
+
+/* Баннер */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 757px;
+  margin-bottom: 180px;
+  padding: 165px 50px 50px;
+  background-image: url(/images/cover.jpg);
+}
+
+/* блок стилей для надписи на баннере */
+
+.cover-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;  
+}
+
+.title-text {
+  display: block;
+  letter-spacing: 30px;
+}
+
+.title-text-offset {
+  letter-spacing: 60px;
+}
+
+.title-text-without-offset {
+  letter-spacing: 0;
+}
+
+.title-text-center {
+  line-height: 135px;
+  text-align: center;
+}
+
+.title-text-right {
+  line-height: 105px;
+  text-align: right;
+}
+
+/* надпись внизу баннера и кнопк */
+
+.cover-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.cover-description-text {
+  padding: 0  28px;
+  word-spacing: 20px;
+}
+.whitespace {
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25.83px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Лоты  */
+
+.lots {
+  padding: 0 24px;
+}
+
+h2 {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 25px 0 30px;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 334px;
+  min-height: 563px;
+  padding: 51px 40px 48px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 160%;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-weight: normal;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.lots-more-link {
+  display: block;
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 23.48px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-transform: lowercase;
+}
+
+/* ссылки на разные изображения-бэкграунды карточек */
+
+.card-type-film {
+  background-image: url(/images/card-lot-01.jpg);
+}
+
+.card-type-book {
+  background-image: url(/images/card-lot-02.jpg);
+}
+
+.card-type-art {
+  background-image: url(/images/card-lot-03.jpg);
+}
+
+
+/* Об аукционе */
+.about {
+  display: flex;
+  padding: 150px 24px 180px;
+}
+
+.logo-circle {
+  min-width: 240px;
+  height: 240px;
+  margin: 32px 72px 320px 47px;
+  border-radius: 50%;
+  background-color: #000000;
+  background-image: url(/images/logo-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 133px;
+}
+
+.about-title {
+  padding-left: 0;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+p {
+  display: inline;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* подвал */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 50px 88px;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: lowercase;
+  list-style: none;
+}
+
+
+.footer-social-list {
+  display: flex;
+  gap: 48px;
+}
+
+.footer-social-list-item {
+  width: 48px;
+  list-style: none;
+}
+
+
+
+
