@@ -1,10 +1,14 @@
 /* Оно тебе надо by RM */
 
 /* Общие повторяющиеся стили */
-/* 
-.overlay {
 
-} */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.6;
+  background-color: #000;
+}
 
 /* Шапуля */
 
@@ -18,12 +22,15 @@
   align-items: center;
 }
 
+.menu {
+  padding-left: 27px;
+}
+
 .menu-list {
   display: flex;
   grid-column: 3;
   gap: 32px;
   width: 392px;
-  font-weight: 400;
   text-underline-offset: 4px;
   list-style: circle;
 }
@@ -33,7 +40,6 @@
 }
 
 .menu-list-item-link {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
   text-transform: lowercase;
@@ -44,11 +50,11 @@
 }
 
 .logo-link {
-  grid-column: 7;
+  grid-column: 5;
 }
 
 .logo-image {
-  width: 148px;
+  width: 135px;
   height: 105px;
 }
 
@@ -56,18 +62,21 @@
   display: block;
   grid-column: 22;
   width: 240px;
-  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 24px;
-  letter-spacing: 1px;
+  line-height: 24.3px;
   text-underline-offset: 4px;
   white-space: nowrap;
+}
+
+.address-text {
+  white-space: wrap;
 }
 
 /* Баннер */
 
 .cover {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,15 +84,19 @@
   margin-bottom: 180px;
   padding: 165px 50px 50px;
   background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 125% 100%;
 }
 
 /* блок стилей для надписи на баннере */
 
 .cover-title {
+  z-index: 3;
   color: #fff;
   font-weight: bold;
   font-size: 100px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .title-text {
@@ -112,6 +125,7 @@
 /* надпись внизу баннера и кнопк */
 
 .cover-description {
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +135,7 @@
   text-transform: uppercase;
 }
 .cover-description-text {
-  padding: 0  28px;
+  padding: 0 28px;
   word-spacing: 20px;
 }
 .whitespace {
@@ -148,7 +162,7 @@
 }
 
 h2 {
-  padding-left: 40px;
+  padding-left: 40px; 
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -163,32 +177,38 @@ h2 {
   color: #fff;
 }
 
+.card-wrapper-link {
+  text-decoration: none;
+}
+
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
   width: 334px;
-  min-height: 563px;
+  height: 565px;
   padding: 51px 40px 48px;
-  background-color: white;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 160%;
+  background-size: 162%;
 }
 
 .card-title {
+  z-index: 3;
   font-weight: bold;
   font-size: 22px;
   line-height: 26.4px;
   text-decoration: underline;
+  text-underline-offset: 4px;
   text-transform: uppercase;
 }
 
 .card-text {
-  font-weight: normal;
+  z-index: 3;
   font-size: 20px;
-  text-decoration: none;
 }
 
 .lots-more-link {
@@ -215,7 +235,6 @@ h2 {
   background-image: url(/images/card-lot-03.jpg);
 }
 
-
 /* Об аукционе */
 .about {
   display: flex;
@@ -227,11 +246,11 @@ h2 {
   height: 240px;
   margin: 32px 72px 320px 47px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #000;
   background-image: url(/images/logo-white.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;
+  background-size: 62%;
 }
 
 .about-info {
@@ -241,19 +260,24 @@ h2 {
   margin-top: 133px;
 }
 
+/* сбрасываем отступ что бы прижать титл слева */
+
 .about-title {
   padding-left: 0;
 }
-.about-text {
+
+.about-text-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-p {
-  display: inline;
+.about-text-paragraph {
+  padding-right: 5px;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 /* подвал */
@@ -272,10 +296,10 @@ p {
   align-items: center;
   font-size: 18px;
   line-height: 21px;
+  text-underline-offset: 5px;
   text-transform: lowercase;
   list-style: none;
 }
-
 
 .footer-social-list {
   display: flex;
@@ -286,7 +310,3 @@ p {
   width: 48px;
   list-style: none;
 }
-
-
-
-
