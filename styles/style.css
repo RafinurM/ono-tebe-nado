@@ -83,7 +83,7 @@
   min-height: 757px;
   margin-bottom: 180px;
   padding: 165px 50px 50px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 125% 100%;
@@ -226,15 +226,15 @@
 /* ссылки на разные изображения-бэкграунды карточек */
 
 .card-type-film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-type-book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card-type-art {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 /* Об аукционе */
@@ -249,7 +249,7 @@
   margin: 32px 72px 320px 47px;
   border-radius: 50%;
   background-color: #000;
-  background-image: url(/images/logo-white.svg);
+  background-image: url(../images/logo-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 62%;
